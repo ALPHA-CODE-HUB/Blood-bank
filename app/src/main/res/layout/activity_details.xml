@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Details">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/org">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/org"
+            android:text="BLOOD BANK"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Donor details"
+
+            android:textSize="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/dname"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="Name:"
+                android:layout_marginTop="100dp"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/ddname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/dname"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="100dp"
+                android:text="arya"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/demail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/dname"
+
+                android:textSize="30dp"
+                android:layout_marginStart="40dp"
+                android:text="Email id:"/>
+
+            <TextView
+                android:id="@+id/ddmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/demail"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="170dp"
+                android:text="someone"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/dnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone No :"
+                android:textSize="30dp"
+                android:layout_below="@id/demail"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/ddnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/dnum"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="230dp"
+                android:text="98477884411"
+                android:textSize="20dp" />
+
+
+
+            <TextView
+                android:id="@+id/dgen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender :"
+                android:textSize="30dp"
+                android:layout_below="@id/dnum"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/ddgen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="MALE"
+                android:layout_alignLeft="@id/dgen"
+                android:layout_marginTop="285dp"
+                android:layout_marginLeft="160dp"/>
+            <TextView
+                android:id="@+id/dblood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bloodtype :"
+                android:textSize="30dp"
+                android:layout_below="@id/dgen"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/ddbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/dgen"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/ddgen"
+                android:text="A+"
+                android:textSize="30dp" />
+
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/dblood"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/shape3"
+                android:text="call now"
+                app:backgroundTint="@null" />
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
